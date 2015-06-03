@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authorization"
+    android:background="@drawable/gradient_toolbar"
+    android:padding="8dp"
+    >
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/title"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+
+
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plane"
+        android:layout_below="@+id/imageView"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:id="@+id/editUserName"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="10"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+            android:hint="password"
+            android:ems="10"
+            android:id="@+id/editUserPass"
+            android:maxLength="10"
+
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dip">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Вход"
+                android:id="@+id/btnLogIn"
+                android:padding="15dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green"
+                android:gravity="center"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Регистрация"
+                android:id="@+id/btnRegistration"
+                android:padding="15dip"
+                android:background="@drawable/btn_green"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

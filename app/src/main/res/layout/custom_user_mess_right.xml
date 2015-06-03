@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="right"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble_right"
+        android:id="@+id/main1"
+        android:padding="2dp"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя"
+            android:textColor="#000000"
+            android:id="@+id/userNameMessaging"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="дистанция"
+            android:textColor="#9A000000"
+            android:textSize="15dp"
+            android:layout_below="@+id/userNameMessaging"
+            android:id="@+id/userMessBubleMessaging" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@drawable/gradient_toolbar"
+    android:padding="8dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plane"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newEditUserName"
+            android:layout_gravity="center_horizontal"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:maxLength="10"
+            android:gravity="center"
+            android:hint="username"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+            android:ems="10"
+            android:maxLength="10"
+
+            android:id="@+id/newEditUserPass"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:hint="password"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+            android:ems="10"
+            android:maxLength="10"
+
+            android:id="@+id/confirmNewEditUserPass"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:hint="confirm password"/>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dip">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Регистрация"
+                android:id="@+id/btnRegistrationNewUser"
+                android:padding="15dip"
+                android:background="@drawable/btn_green"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

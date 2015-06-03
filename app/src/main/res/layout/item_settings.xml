@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc5c5c5"
+    android:padding="8dp">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plane"
+                android:padding="8dp"
+                android:id="@+id/idIconMain">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile"
+                    android:id="@+id/imageIcon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Для изменения личного изображения нажмите на иконку."
+                    android:id="@+id/textView2"
+                    android:layout_toRightOf="@+id/imageIcon"
+                    android:layout_marginLeft="8dp"
+                    android:shadowColor="#ff3d3d3d"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idIconMain"
+                android:id="@+id/textMain"
+                android:textSize="20dp"
+                android:textColor="#ff4b9600"
+                android:shadowColor="#ff3d3d3d"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3"
+                android:text="Основное"/>
+             <RelativeLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/plane"
+                 android:id="@+id/idIconMain1"
+                 android:padding="8dp"
+                 android:layout_below="@+id/textMain">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Новое имя: "
+                android:shadowColor="#ff3d3d3d"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3"
+                android:id="@+id/textView4"
+
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextNewName"
+
+                android:layout_toRightOf="@+id/textView3"
+                android:hint="имя" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Новый пароль: "
+                android:id="@+id/textView3"
+                android:shadowColor="#ff3d3d3d"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3"
+                android:layout_below="@+id/editTextNewName"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editTextNewPass1"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_below="@+id/editTextNewName"
+                android:hint="пароль" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editTextNewPass2"
+                android:layout_below="@+id/editTextNewPass1"
+                android:layout_toRightOf="@+id/textView3"
+                android:hint="пароль" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Новывй номер: "
+                android:id="@+id/textView5"
+                android:shadowColor="#ff3d3d3d"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3"
+                android:layout_below="@+id/editTextNewPass2"
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextNewNumber"
+                android:inputType="phone"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_below="@+id/editTextNewPass2"
+                android:hint="номер" />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Сохранить изменения"
+                android:id="@+id/buttonSave"
+                android:layout_below="@+id/editTextNewNumber"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/btn_green"
+                android:layout_centerHorizontal="true" />
+             </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

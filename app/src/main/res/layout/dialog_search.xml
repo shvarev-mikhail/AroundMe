@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plane">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="8dp"
+            android:id="@+id/nametext"
+            android:text="Имя: "/>
+        <EditText
+            android:id="@+id/idEditTextName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nametext"
+            android:layout_alignStart="@+id/idEditTextNumber"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="8dp"
+            android:layout_below="@+id/nametext"
+            android:id="@+id/logintext"
+            android:text="Логин: "/>
+        <EditText
+            android:id="@+id/idEditTextLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logintext"
+            android:layout_toRightOf="@+id/logintext"
+            android:layout_alignStart="@+id/idEditTextNumber"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="8dp"
+            android:layout_below="@+id/logintext"
+            android:id="@+id/numbertext"
+            android:text="Номер т.: "/>
+
+        <EditText
+            android:id="@+id/idEditTextNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/numbertext"
+            android:layout_toRightOf="@+id/numbertext"/>
+        <Button
+            android:id="@+id/idButtonSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green"
+            android:text="Поиск"
+            android:layout_below="@+id/idEditTextNumber"
+            />
+    </RelativeLayout>
+</RelativeLayout>

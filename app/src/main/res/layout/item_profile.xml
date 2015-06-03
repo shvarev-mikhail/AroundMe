@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffc5c5c5"
+    android:padding="8dp">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plane"
+
+        android:id="@+id/main1"
+        android:padding="8dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profile"
+            android:id="@+id/imageIconProfile"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Имя"
+            android:textColor="#b1000000"
+            android:gravity="right"
+            android:id="@+id/userNameFirstLastProfile"
+            android:layout_toRightOf="@+id/imageIconProfile"
+            android:textSize="25dp"
+            android:shadowColor="#ff3d3d3d"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textColor="#9A000000"
+            android:textSize="20dp"
+            android:layout_alignRight="@+id/userNameFirstLastProfile"
+            android:layout_below="@+id/userNameFirstLastProfile"
+            android:id="@+id/userNameProfile"
+            android:shadowColor="#ff3d3d3d"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ff4b9600"
+
+        android:text="Номер тел.: "
+        android:id="@+id/textVNumTel"
+        android:shadowColor="#ff3d3d3d"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"/>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plane"
+        android:id="@+id/main2"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#b1000000"
+            android:id="@+id/textViewNumberProfile"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:text="9999999"
+            android:shadowColor="#ff3d3d3d"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Последнее местоположение: "
+        android:textColor="#ff4b9600"
+        android:textSize="20dp"
+        android:id="@+id/earth"
+        android:shadowColor="#ff3d3d3d"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plane"
+        android:id="@+id/main3"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressProfile"
+            android:textColor="#b1000000"
+            android:textSize="20dp"
+            android:text="Адрес"
+            android:gravity="right"
+            android:shadowColor="#ff3d3d3d"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plane"
+        android:id="@+id/main4"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green"
+            android:text="Обмен сообщениями"
+            android:id="@+id/buttonMessages" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить в список друзей"
+            android:background="@drawable/btn_green"
+
+            android:id="@+id/buttonAddToFriendList" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Принять"
+            android:id="@+id/btnConfirmFriends"
+            android:background="@drawable/btn_green"
+
+            android:visibility="gone"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Отклонить"
+            android:id="@+id/btnNotConfirmFriends"
+            android:background="@drawable/btn_orange"
+
+            android:visibility="gone"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Удалить"
+            android:id="@+id/btnDeleteFriend"
+            android:background="@drawable/btn_orange"
+
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>
