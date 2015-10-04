@@ -17,16 +17,9 @@ public class ParseInit extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
-        Parse.initialize(this, "WWRSaFlLREJQ7hIjdjzkR5cJdDHmKQWWJU1Lj2i5", "EcZzIY0D15i5GlyvwxNea57j23P2eFV0lfYXowFk");
+        Parse.initialize(this, "key", "key");
         PushService.setDefaultPushCallback(this, MainActivity.class);
         ParseInstallation.getCurrentInstallation().saveInBackground();
     }
 }
-//public class ParseInit {
-//    public void initParse(Context ctx) {
-//        Parse.initialize(ctx, "WWRSaFlLREJQ7hIjdjzkR5cJdDHmKQWWJU1Lj2i5", "EcZzIY0D15i5GlyvwxNea57j23P2eFV0lfYXowFk");
-//        PushService.setDefaultPushCallback(ctx, Main.class);
-//        ParseInstallation.getCurrentInstallation().saveInBackground();
-//
-//    }
-//}
+
